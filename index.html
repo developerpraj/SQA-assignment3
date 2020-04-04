@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h2 style="text-align: center;">BMI Retirement Calculator</h2>
+<style>
+  
+  .left {
+    left: 0;
+    background-color: rgb(233, 185, 185);
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgb(178, 218, 162);
+  }
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="split left">
+<form action="/action_page.php" style= "left:10%;">
+  <label for="mass">Mass:</label><br>
+  <input type="text" id="mass" name="mass" value=""><br>
+  <label for="height">Height:</label><br>
+  <input type="text" id="height" name="height" value=""><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+
+<div class="split right">
+  <form action="/action_page.php" style= "left:10%;">
+    <label for="age">Age:</label><br>
+    <input type="text" id="age" name="age" value=""><br>
+    <label for="salary">Annual Salary:</label><br>
+    <input type="text" id="salary" name="salary" value=""><br>
+
+    <label for="goal">Goal:</label><br>
+    <input type="text" id="goal" name="goal" value=""><br>
+
+    <label for="percent">Percent:</label><br>
+    <input type="text" id="percent" name="percent" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  </div>
+
+</body>
+</html>
