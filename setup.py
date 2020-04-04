@@ -1,0 +1,31 @@
+from setuptools import find_packages, setup
+import os
+
+# Get more https://pypi.org/pypi?%3Aaction=list_classifiers
+CLASSIFIERS = [
+    "Development Status :: 5 - Production/Stable",
+    # Indicate to who your project is directed
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    # Indicate the used license (must match the "license")
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+    # Indicate supported versions, Python 2, Python 3 or both.
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+EXCLUDE_FROM_PACKAGES = ["project","project.*"]
+
+def read(fname):
+    with open(os.path.join(os.path.dirname(__file__), fname)) as f:
+        return f.read()
+
+
